@@ -5,5 +5,5 @@
       debug:
         msg: "Govind Bhardwaj"
         
-    - name: "Make /root/JK/"
-      command: mkdir /root/JK
+    - name: "List"
+      command: ls
