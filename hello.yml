@@ -5,10 +5,17 @@
       debug:
         msg: "Govind Bhardwaj"
         
-    - name: "List"
+    - name: "u"
       command: id
       register: x
       
-    - name: "Print List"
+    - name: "User"
       debug:
         var: x
+        
+    - name: "Root Directory List"
+      command: ls /root/
+      register: y
+      
+    - debug:
+        var: y
