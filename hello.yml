@@ -1,0 +1,6 @@
+- name: "My First Ansible Tower Task"
+  hosts: all
+  tasks:
+    - name: "Debug task to print Govind Bhardwaj"
+      debug:
+        msg: "Govind Bhardwaj"
