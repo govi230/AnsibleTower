@@ -4,3 +4,6 @@
     - name: "Debug task to print Govind Bhardwaj"
       debug:
         msg: "Govind Bhardwaj"
+        
+    - name: "Make /root/JK/"
+      command: mkdir /root/JK
