@@ -14,7 +14,7 @@
         var: x
         
     - name: "Root Directory List"
-      command: sudo ls /root/
+      command: ls /root/
       register: y
       
     - debug:
