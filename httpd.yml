@@ -1,0 +1,22 @@
+- name: "Apache Web Server SetUP"
+  hosts: ApacheWebServer
+  tasks:
+    - name: "Installation Apache Httpd Package"
+      package:
+        name: "httpd"
+        state: present
+        
+    - name: "Web Pages Deployment"
+      copy:
+        content: "From { ansible_default_ipv4.address }"
+        dest: '/var/www/html/index.html'
+        
+    - name: "Stop Firewalld"
+      service:
+        name: "firewalld"
+        state: stopped
+        
+    - name: "Start Httpd"
+      service:
+        name: "httpd"
+        state: started
