@@ -7,3 +7,8 @@
         
     - name: "List"
       command: ls
+      register: x
+      
+    - name: "Print List"
+      debug:
+        var: x
