@@ -6,7 +6,7 @@
         msg: "Govind Bhardwaj"
         
     - name: "List"
-      command: ls
+      command: ls /root/
       register: x
       
     - name: "Print List"
