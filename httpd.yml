@@ -8,7 +8,7 @@
         
     - name: "Web Pages Deployment"
       copy:
-        content: "From { ansible_default_ipv4.address }"
+        content: "From {{ ansible_default_ipv4.address }}"
         dest: '/var/www/html/index.html'
         
     - name: "Stop Firewalld"
